@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# # Tweet like Trump: a one2seq Model
+# # a one2seq Model
 
 # In this project we are going to build a model that takes a single value as an input, and outputs a tweet similar to those of [Donald Trump](https://twitter.com/realDonaldTrump). 
 # 
@@ -126,7 +126,7 @@ print("Size of Vocabulary:", len(word_counts.keys()))
 
 # Load GloVe's embeddings
 embeddings_index = {}
-with open('/Users/deekshithmarla/Downloads/glove.twitter.27B/glove.twitter.27B.200d.txt', encoding='utf-8') as f:
+with open('/Users/../Downloads/glove.twitter.27B/glove.twitter.27B.200d.txt', encoding='utf-8') as f:
     for line in f:
         values = line.split(' ')
         word = values[0]
@@ -248,7 +248,7 @@ for i in range(groups):
 
 # In[29]:
 
-# The most common words for all of Trump's tweets
+# The most common words for all of tweets
 n_words = 100
 sorted_vocab = sorted(word_counts.items(), key=operator.itemgetter(1), reverse=True)
 top_n_words = []
